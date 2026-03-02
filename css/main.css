@@ -1,1 +1,615 @@
-* { padding: 0; margin: 0; box-sizing: border-box; } @font-face { font-family: "Bebas Neue"; src: url(../fonts/BebasNeue-Regular.woff2); font-weight: 400; font-display: swap; } @font-face { font-family: "Involve"; src: url(../fonts/Involve-Regular-subset-AaNumPunct.woff2); font-weight: 400; font-display: swap; } @font-face { font-family: "Gilroy"; src: url(../fonts/Gilroy-Regular.woff2); font-weight: 400; font-display: swap; } @font-face { font-family: "Gilroy"; src: url(../fonts/Gilroy-Medium.woff2); font-weight: 500; font-display: swap; } @font-face { font-family: "Gilroy"; src: url(../fonts/Gilroy-Bold.woff2); font-weight: 700; font-display: swap; } body { font-family: "Gilroy", sans-serif; } .webinar { max-width: 390px; width: 100%; margin: 0 auto; } wistia-player[media-id='4ru41u7trz']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/4ru41u7trz/swatch'); display: block; filter: blur(5px); padding-top: 56.25%; } wistia-player[media-id='p9fyedn03j']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/p9fyedn03j/swatch'); display: block; filter: blur(5px); padding-top: 56.25%; } wistia-player[media-id='nbx5uegppu']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/nbx5uegppu/swatch'); display: block; filter: blur(5px); padding-top: 187.5%; } .webinar__stats { display: flex; align-items: center; justify-content: space-between; padding: 11px 23px; background: linear-gradient(90deg, #8F0EF4 0%, #B45CFA 50.96%, #8F0EF4 100%); gap: 1px; border-radius: 0 0 20px 20px; position: relative; z-index: 2; max-width: 350px; width: 100%; margin: 0 auto 18px; } .webinar__stat-number { font-weight: 700; font-size: 18px; text-transform: uppercase; line-height: 110%; color: white; } .webinar__stat-label { font-weight: 400; font-size: 14px; line-height: 100%; color: white; } .webinar__divider { width: 1px; height: 32px; background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.9) 35%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.9) 65%, transparent 100%); } .webinar__title { font-family: "Bebas Neue"; text-align: center; font-weight: 400; font-size: clamp(26px, 8vw, 33px); position: relative; z-index: 2; line-height: 120%; text-transform: uppercase; margin-bottom: 16px; } .webinar__highlight { background-color: #8F0EF4; color: white; padding: 0 4px; } .webinar__video-wrapper { position: relative; max-width: 350px; width: 100%; margin: 0 auto; background: #000; border-radius: 20px; height: auto; } .webinar__video { max-width: 350px; width: 100%; margin: 0 auto 30px; display: flex; border-radius: 20px; overflow: hidden; } .webinar__play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: none; border: none; cursor: pointer; z-index: 2; transition: opacity 0.4s ease, transform 0.3s ease; } .webinar__play-btn img { width: 30px; height: 30px; } .webinar__play-btn:hover { transform: translate(-50%, -50%) scale(1.1); opacity: 0.9; } .webinar__video-wrapper.playing .webinar__play-btn { opacity: 0; pointer-events: none; } .HomeFormRowInputa, .HomeFormRowLabela { font-size: 14px; font-weight: 500; line-height: 120%; } .HomeFormRowa { margin-bottom: 20px; } .HomeFormRowLabela { display: block; margin-bottom: 6px; color: #000; } .HomeFormRowInputa { width: 100%; padding: 20px 13px; border: 1px solid #BFBFBF; min-height: 50px; background-color: #fff; border-radius: 6px; font-weight: 400; outline: 0; font-size: 11px; height: 50px; transition: border-color 0.2s; } .HomeFormRowInputa:focus { border-color: #B45CFA; } .HomeFormRowInputa::placeholder { color: #aaa; font-size: 11px; } .HomeFormBtna { font-family: "Bebas Neue", sans-serif; width: 100%; cursor: pointer; border-radius: 99px; transition: 0.3s; background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%); box-shadow: 0px 4px 0px 0px #8C0000, 0px 4px 4px 0px #FFFFFF40 inset; font-weight: 400; letter-spacing: 4%; padding: 21px; font-size: clamp(25px, 8vw, 32px); color: #FFF; text-transform: uppercase; border: none; position: relative; display: flex; align-items: center; justify-content: center; gap: 9px; } .homeFormTopTitle { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 32px; line-height: 125%; text-transform: uppercase; margin-left: auto; margin-right: auto; text-align: center; } .custom__btna { font-family: "Bebas Neue", sans-serif; width: 100%; cursor: pointer; border-radius: 99px; transition: 0.3s; background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%); box-shadow: 0px 4px 0px 0px #8C0000, 0px 4px 4px 0px #FFFFFF40 inset; font-weight: 400; letter-spacing: 4%; padding: 21px; font-size: 32px; color: #FFF; text-transform: uppercase; border: none; position: relative; display: flex; align-items: center; justify-content: center; gap: 9px; } .custom__btn { font-family: "Bebas Neue", sans-serif; width: 100%; cursor: pointer; border-radius: 99px; transition: 0.3s; background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%); box-shadow: 0px 4px 0px 0px #8C0000, 0px 4px 4px 0px #FFFFFF40 inset; font-weight: 400; letter-spacing: 4%; padding: 21px; font-size: 32px; color: #FFF; text-transform: uppercase; border: none; position: relative; display: flex; align-items: center; justify-content: center; gap: 9px; } .phone-input-containera { display: flex; align-items: center; position: relative; border: 1px solid #BFBFBF; background-color: white; border-radius: 6px; } .phone-input-containera:focus { border-color: #B45CFA; } .selected-codea { display: flex; font-size: 14px; font-weight: 400; line-height: 100%; } .country-selectora { position: relative; margin-right: 10px; } .selected-countrya { display: flex; align-items: center; padding: 10px; padding-right: 0; border-radius: 6px; cursor: pointer; min-height: 50px; font-family: sans-serif !important; font-size: 18px; font-weight: 400 !important; min-width: max-content; border: none; background-color: transparent; background-color: #858585; border: 1px solid #BFBFBF; color: white; width: 81px; justify-content: center; } .country-dropdowna { position: absolute; top: 110%; left: 0; width: 100%; background-color: #858585; border: 1px solid #BFBFBF; border-radius: 9px; z-index: 40; max-height: 200px; overflow-y: auto; font-family: sans-serif !important; font-weight: 400 !important; } .country-optiona { display: flex; justify-content: space-between; align-items: center; padding: 10px; cursor: pointer; font-family: sans-serif; font-weight: 400 !important; } .country-optiona:hover { background-color: #f3f7f8; } .country-optiona.selecteda { background-color: #e6f0fa; } .dropdown__icon-wrappera { display: flex; align-items: center; justify-content: center; } .webinar__form { position: relative; background: #F6F6F6; border-radius: 30px; box-shadow: 0px 0px 20px 0px #16D7C226; overflow: hidden; border: 2px solid #B45CFA; padding: 18px 20px 17px; margin-bottom: 35px; } .teacher-card { background-image: url(../images/bg.avif); background-position: center; background-size: cover; min-height: 632px; padding: 0 20px; color: white; margin-bottom: 10px; } .teacher-card__title { text-align: center; font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 38px; line-height: 114%; text-transform: uppercase; margin-bottom: 41px; color: #000000; } .teacher-card__name { font-weight: 700; font-size: 22px; line-height: 140%; text-transform: uppercase; margin-bottom: 9px; } .teacher-card__btn { margin-bottom: 30px; } .features-list { display: flex; flex-direction: column; gap: 15px; list-style: none } .feature { display: flex; align-items: start; gap: 7px; } .feature__icon { display: flex; } .feature__text { font-size: 16px; font-weight: 400; line-height: 135%; } .feature__accent { font-weight: 700; } .compare__title { text-align: center; font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 38px; line-height: 114%; text-transform: uppercase; margin-bottom: 5px; color: #000000; } .compare__content { display: flex; flex-direction: column; gap: 25px; margin-bottom: 18px; } .compare-card { padding: 12px 14px 19px; border: 1px solid #B45CFA; box-shadow: 0px 0px 20px 0px #8F0EF426; border-radius: 30px; } .compare-card__image { max-width: 370px; width: 100%; height: auto; margin: 0 auto 10px; display: flex; border-radius: 25px; overflow: hidden; } .compare-card__heading { text-align: center; font-weight: 700; font-size: 22px; line-height: 114%; margin-bottom: 10px; text-transform: uppercase; } .problem-list { list-style: none; display: flex; flex-direction: column; gap: 8px; } .problem-list__item { font-weight: 400; font-size: 16px; line-height: 130%; } .problem-list__number { color: #8F0EF4; font-weight: 700; } .problem-list__highlight { font-weight: 700; } .webinar__container { position: relative; padding: 0 10px; } .webinar__container img.hero-bg { width: 100%; max-width: 580px; height: auto; aspect-ratio: 585 / 788; object-fit: contain; } .compare__btn { margin-bottom: 35px; } .student__title { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: clamp(35px, 11vw, 38px); line-height: 114%; text-transform: uppercase; margin-bottom: 13px; text-align: center; } .student__items { display: flex; flex-direction: column; gap: 18px; margin-bottom: 25px; } .testimonial { background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #DEB7FC 0%, #E8CCFD 53.37%, #DFBAFC 100%); border-radius: 25px; padding: 12px; } .video-player { position: relative; cursor: pointer; margin: 0 auto 9px; width: 196px; height: 196px; display: flex; } .video-player__video { width: 196px; height: 196px; object-fit: cover; border-radius: 9999px; border: 3px solid #8f0ef4; display: flex; background: #000; } .video-player__play-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center; border: none; border-radius: 9999px; cursor: pointer; transition: opacity 0.3s; z-index: 2; } .video-player__play-overlay { opacity: 1; } .video-player.playing .video-player__play-overlay { opacity: 0; pointer-events: none; } .testimonial__caption { background-color: #00000066; max-width: 231px; width: 100%; padding: 5px; margin: 0 auto; } .testimonial__text { color: #FFFFFF; font-weight: 500; font-size: 16px; line-height: 114%; text-align: center; }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/BebasNeue-Regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Involve";
+    src: url(../fonts/Involve-Regular-subset-AaNumPunct.woff2);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Medium.woff2);
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Bold.woff2);
+    font-weight: 700;
+    font-display: swap;
+}
+
+body {
+    font-family: "Gilroy", sans-serif;
+}
+
+.webinar {
+    max-width: 390px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+wistia-player[media-id='4ru41u7trz']:not(:defined) {
+    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/4ru41u7trz/swatch');
+    display: block;
+    filter: blur(5px);
+    padding-top: 56.25%;
+}
+
+wistia-player[media-id='p9fyedn03j']:not(:defined) {
+    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/p9fyedn03j/swatch');
+    display: block;
+    filter: blur(5px);
+    padding-top: 56.25%;
+}
+
+wistia-player[media-id='nbx5uegppu']:not(:defined) {
+    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/nbx5uegppu/swatch');
+    display: block;
+    filter: blur(5px);
+    padding-top: 187.5%;
+}
+
+wistia-player[media-id='8cl99eod89']:not(:defined) {
+    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/8cl99eod89/swatch');
+    display: block;
+    filter: blur(5px);
+    padding-top: 56.25%;
+}
+
+.webinar__stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 23px;
+    background: linear-gradient(90deg, #8F0EF4 0%, #B45CFA 50.96%, #8F0EF4 100%);
+    gap: 1px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    z-index: 2;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto 18px;
+}
+
+.webinar__stat-number {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: white;
+}
+
+.webinar__stat-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: white;
+}
+
+.webinar__divider {
+    width: 1px;
+    height: 32px;
+    background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.9) 35%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.9) 65%, transparent 100%);
+}
+
+.webinar__title {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-weight: 400;
+    font-size: clamp(26px, 8vw, 33px);
+    position: relative;
+    z-index: 2;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.webinar__highlight {
+    background-color: #8F0EF4;
+    color: white;
+    padding: 0 4px;
+}
+
+.webinar__video-wrapper {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 20px;
+    height: auto;
+}
+
+.webinar__video {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto 30px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.webinar__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.webinar__play-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.webinar__play-btn:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.9;
+}
+
+.webinar__video-wrapper.playing .webinar__play-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.HomeFormRowInputa,
+.HomeFormRowLabela {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.HomeFormRowa {
+    margin-bottom: 20px;
+}
+
+.HomeFormRowLabela {
+    display: block;
+    margin-bottom: 6px;
+    color: #000;
+}
+
+.HomeFormRowInputa {
+    width: 100%;
+    padding: 20px 13px;
+    border: 1px solid #BFBFBF;
+    min-height: 50px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-weight: 400;
+    outline: 0;
+    font-size: 11px;
+    height: 50px;
+    transition: border-color 0.2s;
+}
+
+.HomeFormRowInputa:focus {
+    border-color: #B45CFA;
+}
+
+.HomeFormRowInputa::placeholder {
+    color: #aaa;
+    font-size: 11px;
+}
+
+.HomeFormBtna {
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 99px;
+    transition: 0.3s;
+    background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);
+    box-shadow: 0px 4px 0px 0px #8C0000, 0px 4px 4px 0px #FFFFFF40 inset;
+    font-weight: 400;
+    letter-spacing: 4%;
+    padding: 21px;
+    font-size: clamp(25px, 8vw, 32px);
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.homeFormTopTitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.custom__btna {
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 99px;
+    transition: 0.3s;
+    background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);
+    box-shadow: 0px 4px 0px 0px #8C0000, 0px 4px 4px 0px #FFFFFF40 inset;
+    font-weight: 400;
+    letter-spacing: 4%;
+    padding: 21px;
+    font-size: 32px;
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.custom__btn {
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 99px;
+    transition: 0.3s;
+    background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);
+    box-shadow: 0px 4px 0px 0px #8C0000, 0px 4px 4px 0px #FFFFFF40 inset;
+    font-weight: 400;
+    letter-spacing: 4%;
+    padding: 21px;
+    font-size: 32px;
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.phone-input-containera {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.phone-input-containera:focus {
+    border-color: #B45CFA;
+}
+
+.selected-codea {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.country-selectora {
+    position: relative;
+    margin-right: 10px;
+}
+
+.selected-countrya {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-right: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    min-height: 50px;
+    font-family: sans-serif !important;
+    font-size: 18px;
+    font-weight: 400 !important;
+    min-width: max-content;
+    border: none;
+    background-color: transparent;
+    background-color: #858585;
+    border: 1px solid #BFBFBF;
+    color: white;
+    width: 81px;
+    justify-content: center;
+}
+
+.country-dropdowna {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background-color: #858585;
+    border: 1px solid #BFBFBF;
+    border-radius: 9px;
+    z-index: 40;
+    max-height: 200px;
+    overflow-y: auto;
+    font-family: sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.country-optiona {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 400 !important;
+}
+
+.country-optiona:hover {
+    background-color: #f3f7f8;
+}
+
+.country-optiona.selecteda {
+    background-color: #e6f0fa;
+}
+
+.dropdown__icon-wrappera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.webinar__form {
+    position: relative;
+    background: #F6F6F6;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px #16D7C226;
+    overflow: hidden;
+    border: 2px solid #B45CFA;
+    padding: 18px 20px 17px;
+    margin-bottom: 35px;
+}
+
+.teacher-card {
+    background-image: url(../images/bg.avif);
+    background-position: center;
+    background-size: cover;
+    min-height: 632px;
+    padding: 0 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.teacher-card__title {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 114%;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+    color: #000000;
+}
+
+.teacher-card__name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.teacher-card__btn {
+    margin-bottom: 30px;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none
+}
+
+.feature {
+    display: flex;
+    align-items: start;
+    gap: 7px;
+}
+
+.feature__icon {
+    display: flex;
+}
+
+.feature__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;
+}
+
+.feature__accent {
+    font-weight: 700;
+}
+
+.compare__title {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 114%;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.compare__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 18px;
+}
+
+.compare-card {
+    padding: 12px 14px 19px;
+    border: 1px solid #B45CFA;
+    box-shadow: 0px 0px 20px 0px #8F0EF426;
+    border-radius: 30px;
+}
+
+.compare-card__image {
+    max-width: 370px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 10px;
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.compare-card__heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 114%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.problem-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.problem-list__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.problem-list__number {
+    color: #8F0EF4;
+    font-weight: 700;
+}
+
+.problem-list__highlight {
+    font-weight: 700;
+}
+
+.webinar__container {
+    position: relative;
+    padding: 0 10px;
+}
+
+.webinar__container img.hero-bg {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    aspect-ratio: 585 / 788;
+    object-fit: contain;
+}
+
+.compare__btn {
+    margin-bottom: 35px;
+}
+
+.student__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: clamp(35px, 11vw, 38px);
+    line-height: 114%;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+.student__items {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.testimonial {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #DEB7FC 0%, #E8CCFD 53.37%, #DFBAFC 100%);
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.video-player {
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto 9px;
+    width: 196px;
+    height: 196px;
+    display: flex;
+}
+
+.video-player__video {
+    width: 196px;
+    height: 196px;
+    object-fit: cover;
+    border-radius: 9999px;
+    border: 3px solid #8f0ef4;
+    display: flex;
+    background: #000;
+}
+
+.video-player__play-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+
+.video-player__play-overlay {
+    opacity: 1;
+}
+
+.video-player.playing .video-player__play-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimonial__caption {
+    background-color: #00000066;
+    max-width: 231px;
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.testimonial__text {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 114%;
+    text-align: center;
+}

@@ -47,14 +47,9 @@
             <img style="position:absolute;left:50%;transform:translateX(-50%);top:0;max-width:580px;width:100%;height:auto;"
                 src="./images/hero-bg.avif" width="585" height="788" alt="images" decoding="async" loading="lazy" />
 
-            <div class="webinar__video-wrapper">
-                <video class="webinar__video" muted loop playsinline>
-                    <source src="./videos/default.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <button class="webinar__play-btn" aria-label="Play video">
-                    <img src="./images/video/play.svg" alt="Play" loading="lazy" decoding="async">
-                </button>
+            <div class="webinar__video-wrapper" style="margin-bottom: 20px;">
+                <wistia-player data-wistia-id="8cl99eod89" data-wistia-aspect="1.7777777777777777">
+                </wistia-player>
             </div>
             <div class="webinar__form">
                 <div class="homeFormTop">
