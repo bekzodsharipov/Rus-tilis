@@ -15,8 +15,6 @@
     <link rel="preconnect" href="https://fast.wistia.com" crossorigin>
     <link rel="preconnect" href="https://fast.wistia.net" crossorigin>
     <link rel="preconnect" href="https://embed-ssl.wistia.com" crossorigin>
-    <link rel="preload" href="/fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -49,8 +47,9 @@
 
             <img style="position: absolute; top: 170px; right: 50px; z-index: 2;" src="./images/arrow.png"
                 loading="lazy" decoding="async" alt="arrow">
-            <img style="position: absolute; left: 50%; transform: translateX(-50%); top: 0px; max-width: 580px; width: 100%;"
-                src="./images/hero-bg.avif" loading="lazy" decoding="async" width="580" height="560" alt="images">
+            <img style="position:absolute;left:50%;transform:translateX(-50%);top:0;max-width:580px;width:100%;height:auto;"
+                src="./images/hero-bg.avif" width="585" height="788" alt="images" decoding="async" loading="eager"
+                fetchpriority="high" />
 
             <div class="webinar__video-wrapper">
                 <video class="webinar__video" muted loop playsinline>
@@ -118,8 +117,6 @@
 
         <div class="lazyHTML">
         </div>
-
-
     </main>
 
 
